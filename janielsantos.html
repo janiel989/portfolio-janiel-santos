@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio - Janiel dos Santos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho do site com menu de navegação -->
+    <header class="menu">
+        <h1>Janiel Santos</h1>
+
+        <!-- Menu com navegação por âncoras -->
+        <nav>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#formacao">Formação</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+
+        <!-- Seção Sobre Mim -->
+        <section id="sobre" class="aba">
+            <h2>Sobre mim</h2>
+
+            <div class="sobre-container">
+                <img src="imagens/janiel2.jpeg" alt="Foto de Janiel" class="foto-sobre">
+
+                <!---Dados pessoai-->
+                <div class="dados-sobre">
+                    <p><strong>Nome:</strong> Janiel dos Santos</p>
+                    <p><strong>Cidade:</strong> Ribeirão Preto - SP</p>
+                    <p><strong>Formação:</strong> Técnico em Eletrônica</p>
+                    <p><strong>Curso:</strong> Ciência da Computação</p>
+                    <p><strong>E-mail:</strong> janielsantos989@gmail.com</p>
+
+                    <!-- Texto de apresentação profissional -->
+                    <div class="texto-apresentacao">
+                        <h3>Resumo Profissional</h3>
+                        <p>
+                            Sou <strong>Janiel dos Santos</strong>, estudante de
+                            <strong>Ciência da Computação</strong> pela <strong>UNINTER</strong> e
+                            <strong>Técnico em Eletrônica</strong>, formado pela
+                            <strong>ETEC Centro Paula Souza – Ribeirão Preto</strong>.
+                        </p>
+
+                        <h3>Experiência Técnica</h3>
+                        <ul class="lista-experiencia">
+                            <li>Telecomunicações e infraestrutura de redes</li>
+                            <li>Comunicação por fibra óptica</li>
+                            <li>Interligação de data centers e backbone</li>
+                            <li>Sistemas ITS (Intelligent Transportation Systems)</li>
+                            <li>CFTV, radares inteligentes e Wi‑Fi público (hotspot)</li>
+                        </ul>
+
+                        <h3>Área de Interesse</h3>
+                        <p>
+                            Tenho grande interesse em tecnologia, eletrônica e desenvolvimento
+                            de sistemas, buscando aprimorar continuamente meus conhecimentos
+                            técnicos e acadêmicos na área de
+                            <strong>Tecnologia da Informação</strong>.
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Seção Formação -->
+        <section id="formacao" class="aba">
+            <h2>Formação</h2>
+
+            <div class="formacao-container">
+                <img src="imagens/tec1.jpg" alt="Imagem Formação" class="img-formacao">
+
+                <div class="formacao-detalhes">
+
+                    <div class="formacao-colunas">
+
+                        <div class="coluna">
+                            <h3>Formação Acadêmica</h3>
+                            <ul class="lista-formacao">
+                                <li>Técnico em Eletrônica</li>
+                                <li>Cursando Ciência da Computação</li>
+                            </ul>
+                        </div>
+
+                        <div class="coluna">
+                            <h3>Cursos e Conhecimentos</h3>
+                            <ul class="lista-formacao">
+                                <li>Informática básica</li>
+                                <li>Excel avançado</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Portfolio -->
+        <section id="portfolio" class="aba">
+            <h2>Portfólio</h2>
+
+            <div class="portfolio-container">
+                <img src="imagens/portifolio.jpeg" alt="Projeto Portfólio" class="img-portfolio">
+
+                <p class="texto-portfolio">
+                    Este site representa meu portfólio pessoal, desenvolvido como
+                    atividade prática da disciplina Fundamentos da Programação Web.
+                    O projeto utiliza HTML, CSS e JavaScript para construção das páginas
+                    e interação com o usuário.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seçao Contato -->
+        <section id="contato" class="aba">
+            <h2>Contato</h2>
+
+            <form id="formContato" class="form-contato">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" placeholder="Digite sua mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Importação do JavaScript -->
+    <script src="js/script.js">
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f0f0;
+}
+
+/* MENU VERDE FIXO */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background: #0f9d58;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+    z-index: 1000;
+}
+
+
+.menu nav {
+    margin-top: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.conteudo {
+    padding-top: 140px;
+    /* espaço para o menu fixo */
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* ===== SOBRE MIM ===== */
+
+.sobre-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 10px;
+
+}
+
+/* reduz espaço entre título e foto */
+
+.foto-sobre {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0f9d58;
+    /* verde do menu */
+    flex-shrink: 0;
+}
+
+.dados-sobre p {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* ===== FORMAÇÃO ===== */
+
+.formacao-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-formacao {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.lista-formacao {
+    list-style: none;
+    font-size: 18px;
+}
+
+.lista-formacao li {
+    margin-bottom: 10px;
+}
+
+/* ===== PORTFÓLIO ===== */
+
+.portfolio-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-portfolio {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.texto-portfolio {
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ===== CONTATO ===== */
+
+.form-contato {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contato label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.form-contato input,
+.form-contato textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-contato textarea {
+    resize: none;
+    height: 120px;
+}
+
+.form-contato button {
+    margin-top: 20px;
+    padding: 12px;
+    background: #0f9d58;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-contato button:hover {
+    background: #0c7a45;
+}
+
+/* ===== CONTROLE DAS ABAS ===== */
+
+.aba {
+    display: none;
+    background: white;
+    padding: 40px;
+    min-height: calc(100vh - 140px);
+}
+
+/* MOSTRA SOMENTE A ABA CLICADA */
+.aba:target {
+    display: block;
+}
+
+/* Texto da apresentação */
+.texto-apresentacao {
+    margin-top: 15px;
+}
+
+.texto-apresentacao p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* Organização do texto - Sobre mim */
+.dados-sobre h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #0f9d58;
+}
+
+.lista-experiencia {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.lista-experiencia li {
+    margin-bottom: 6px;
+}
+
+#sobre h2 {
+    margin-bottom: 10px;
+}
+
+/* Organização da Formação */
+.formacao-detalhes {
+    margin-top: 20px;
+}
+
+.formacao-detalhes h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #0f9d58;
+}
+
+/* Listas da Formação sem marcadores */
+.formacao-detalhes ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 17px;
+    text-align: center;
+}
+
+.formacao-detalhes li {
+    margin-bottom: 8px;
+}
+
+/* Colunas da Formação */
+.formacao-colunas {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    /* Responsivo */
+    margin-top: 20px;
+}
+
+.formacao-colunas .coluna {
+    min-width: 250px;
+}
